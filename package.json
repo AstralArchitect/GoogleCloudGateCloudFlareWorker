@@ -1,0 +1,27 @@
+{
+  "name": "themeteo-maps-gateway",
+  "version": "1.0.0",
+  "description": "Cloudflare Worker gateway for Google Maps Platform, Air Quality, and Pollen APIs for TheMeteo",
+  "main": "src/index.ts",
+  "scripts": {
+    "dev": "wrangler dev",
+    "deploy": "wrangler deploy",
+    "typecheck": "tsc --noEmit"
+  },
+  "keywords": [
+    "cloudflare-worker",
+    "google-maps",
+    "air-quality",
+    "pollen",
+    "proxy",
+    "themeteo"
+  ],
+  "author": "TheMeteo",
+  "license": "MIT",
+  "devDependencies": {
+    "@cloudflare/workers-types": "^4.20250204.0",
+    "typescript": "^5.7.3",
+    "wrangler": "^3.107.3"
+  }
+}
+

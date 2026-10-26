@@ -1,0 +1,24 @@
+name = "themeteo-maps-gateway"
+main = "src/index.ts"
+compatibility_date = "2024-11-01"
+compatibility_flags = ["nodejs_compat"]
+
+# Observability
+[observability]
+enabled = true
+
+# Variables d'environnement publiques (non secrètes)
+[vars]
+# Mettre à "true" pour activer le cache Cloudflare Edge (Geocoding & Pollen)
+ENABLE_CACHE = "true"
+# Durée de cache pour Geocoding en secondes (par défaut : 7 jours = 604800s)
+GEOCODING_CACHE_TTL = "604800"
+# Durée de cache pour Pollen en secondes (par défaut : 1 heure = 3600s)
+POLLEN_CACHE_TTL = "3600"
+# Durée de cache pour Air Quality en secondes (par défaut : 30 minutes = 1800s)
+AIR_QUALITY_CACHE_TTL = "1800"
+
+# Note sur les secrets à ajouter via la CLI :
+# wrangler secret put GOOGLE_MAPS_API_KEY
+# (Optionnel) wrangler secret put APP_TOKEN
+

@@ -1,0 +1,8 @@
+# Exemple de fichier pour les tests en local avec `npx wrangler dev`
+# Copiez ce fichier vers `.dev.vars` et renseignez votre véritable clé API Google :
+GOOGLE_MAPS_API_KEY=AIzaSy...
+
+# Optionnel : Si vous souhaitez restreindre l'accès au Worker avec un token partagé
+# APP_TOKEN=votre_token_secret_optionnel
+
+
